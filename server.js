@@ -1,2 +1,0 @@
-hello Ankita 
-shut Up 
