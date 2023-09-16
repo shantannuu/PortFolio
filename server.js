@@ -7,6 +7,10 @@ const dbConfig = require("./config/dbConfig");
 
 const port = process.env.PORT || 5000;
 
+const userRoute = require("./Routes/aboutRoutes")
+
+app.use("/api/users", userRoute);
+
 const path = require("path");
 __dirname = path.resolve();
 
