@@ -1,481 +1,2034 @@
-<html class="js" lang="en"><!--<![endif]--><head>
+<html class="js" lang="en">
+  <!--<!
+  [endif]--><head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      src="https://connect.facebook.net/en_US/sdk.js?hash=7243252b705e4a27c12fba4b8cc44b76"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <script
+      id="facebook-jssdk"
+      src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5&amp;appId=227683463924663"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-MJFDYEXZZN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Google tag (gtag.js) -->
-	<script src="https://connect.facebook.net/en_US/sdk.js?hash=7243252b705e4a27c12fba4b8cc44b76" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5&amp;appId=227683463924663"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MJFDYEXZZN"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-MJFDYEXZZN');
-	</script>
-
-	<meta charset="utf-8">
-
-	<title>My UI design book - Design case study</title><link rel="stylesheet" id="siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4" href="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4.css" media="all"> <link rel="preload" href="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4.css" as="style">
-
-<!-- 	<meta property="og:title" content="Design Portfolio of Adham Dannaway | UI/UX Product Designer" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.adhamdannaway.com" />
-	<meta property="og:image" content="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/adham-dannaway-designer-coder.jpg" />
-	<meta property="og:image:width" content="1040" />
-	<meta property="og:image:height" content="600" />
- -->
-	<!-- http://t.co/dKP3o1e -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="twitter:widgets:csp" content="on">
-	<meta property="fb:app_id" content="381830641890866">
-
-	<!-- For all browsers -->
-	
-
-	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/selectivizr-min.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="https://www.adhamdannaway.com/wp-content/themes/dannaway/ie.css" />
-	<![endif]-->
-
-	<!-- JavaScript -->
-	<script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/modernizr-2.5.3-min.js"></script>
-	
-
-	<!-- For iPhone 4 -->
-	<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"> -->
-	<!-- For iPad 1-->
-	<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"> -->
-	<!-- For the new iPad -->
-	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/h/apple-touch-icon-144x144-precomposed.png"> -->
-	<!-- For iPhone 3G, iPod Touch and Android -->
-	<!-- <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"> -->
-	<!-- For Nokia -->
-	<!-- <link rel="shortcut icon" href="img/l/apple-touch-icon.png"> -->
-	<!-- For everything else -->
-	<link rel="shortcut icon" href="/favicon.ico">
-
-	<!--iOS -->
-	<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
-	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
-	<!-- <link rel="apple-touch-startup-image" href="img/splash.png"> -->
-
-	<!-- <script>(function(){var p,l,r=window.devicePixelRatio;if(navigator.platform==="iPad"){p=r===2?"img/startup/startup-tablet-portrait-retina.png":"img/startup/startup-tablet-portrait.png";l=r===2?"img/startup/startup-tablet-landscape-retina.png":"img/startup/startup-tablet-landscape.png";document.write('<link rel="apple-touch-startup-image" href="'+l+'" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="'+p+'" media="screen and (orientation: portrait)"/>');}else{p=r===2?"img/startup/startup-retina.png":"img/startup/startup.png";document.write('<link rel="apple-touch-startup-image" href="'+p+'"/>');}})()</script> -->
-	<!--Microsoft -->
-
-	<!-- Prevents links from opening in mobile Safari -->
-	<!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
-	<meta http-equiv="cleartype" content="on">
-
-	<link rel="pingback" href="https://www.adhamdannaway.com/xmlrpc.php">
-	
-
-	<script type="text/javascript">
-
-      // Eliminate FOUC
-      document.documentElement.className = 'js';
-
+      gtag("config", "G-MJFDYEXZZN");
     </script>
 
-     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-	<!-- This site is optimized with the Yoast SEO plugin v21.1 - https://yoast.com/wordpress/plugins/seo/ -->
-	<meta name="description" content="After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book.">
-	<link rel="canonical" href="https://www.adhamdannaway.com/portfolio/ui-design-book">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="My UI design book - Design case study">
-	<meta property="og:description" content="After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book.">
-	<meta property="og:url" content="https://www.adhamdannaway.com/portfolio/ui-design-book">
-	<meta property="og:site_name" content="Adham Dannaway">
-	<meta property="article:modified_time" content="2023-01-03T11:38:51+00:00">
-	<meta property="og:image" content="https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg">
-	<meta property="og:image:width" content="628">
-	<meta property="og:image:height" content="368">
-	<meta property="og:image:type" content="image/jpeg">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@AdhamDannaway">
-	<meta name="twitter:label1" content="Est. reading time">
-	<meta name="twitter:data1" content="7 minutes">
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.adhamdannaway.com/portfolio/ui-design-book","url":"https://www.adhamdannaway.com/portfolio/ui-design-book","name":"My UI design book - Design case study","isPartOf":{"@id":"https://adhamdannaway.com/#website"},"primaryImageOfPage":{"@id":"https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage"},"image":{"@id":"https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage"},"thumbnailUrl":"https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg","datePublished":"2022-12-29T05:44:13+00:00","dateModified":"2023-01-03T11:38:51+00:00","description":"After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book.","breadcrumb":{"@id":"https://www.adhamdannaway.com/portfolio/ui-design-book#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.adhamdannaway.com/portfolio/ui-design-book"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage","url":"https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg","contentUrl":"https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg","width":628,"height":368,"caption":"UI design book"},{"@type":"BreadcrumbList","@id":"https://www.adhamdannaway.com/portfolio/ui-design-book#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://adhamdannaway.com/"},{"@type":"ListItem","position":2,"name":"My UI design book"}]},{"@type":"WebSite","@id":"https://adhamdannaway.com/#website","url":"https://adhamdannaway.com/","name":"Adham Dannaway","description":"UI/UX Designer &amp; Front End Developer","publisher":{"@id":"https://adhamdannaway.com/#/schema/person/f34e0be7bb1daca6c82945f4d3661ca7"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://adhamdannaway.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://adhamdannaway.com/#/schema/person/f34e0be7bb1daca6c82945f4d3661ca7","name":"Adham Dannaway","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://adhamdannaway.com/#/schema/person/image/","url":"https://www.adhamdannaway.comwp-content/uploads/2020/12/adham-dannaway-profile.jpg","contentUrl":"https://www.adhamdannaway.comwp-content/uploads/2020/12/adham-dannaway-profile.jpg","width":550,"height":550,"caption":"Adham Dannaway"},"logo":{"@id":"https://adhamdannaway.com/#/schema/person/image/"},"sameAs":["http://adhamdannaway.com","https://twitter.com/AdhamDannaway"]}]}</script>
-	<!-- / Yoast SEO plugin. -->
-
-
-<link rel="dns-prefetch" href="//ajax.googleapis.com">
-<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.adhamdannaway.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	
-<style id="classic-theme-styles-inline-css" type="text/css">
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id="global-styles-inline-css" type="text/css">
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js?ver=6.3.1" id="jquery-js"></script>
-<link rel="https://api.w.org/" href="https://www.adhamdannaway.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.adhamdannaway.com/xmlrpc.php?rsd">
-
-<link rel="shortlink" href="https://www.adhamdannaway.com/?p=850">
-<link rel="alternate" type="application/json+oembed" href="https://www.adhamdannaway.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhamdannaway.com%2Fportfolio%2Fui-design-book">
-<link rel="alternate" type="text/xml+oembed" href="https://www.adhamdannaway.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhamdannaway.com%2Fportfolio%2Fui-design-book&amp;format=xml">
-
-<script src="https://www.adhamdannaway.com/wp-includes/js/wp-emoji-release.min.js?ver=6.3.1" defer=""></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
-.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
-
-<body class="clearfix">
-
-
-<!-- Include Facebook like button -->
-<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=227683463924663";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-	<header id="header" style="opacity: 1; top: 0px;">
-
-		<div class="row">
-
-			<div class="col-12">
-
-				<a id="logo" class="logo" href="https://www.adhamdannaway.com/">Adham Dannaway</a>
-				<div class="icon-nav">navigation</div>
-				
-				<nav>
-
-					<ul id="nav" class="portfolio">
-						<li class="page_item page-item-2"><a href="https://www.adhamdannaway.com/about">about</a></li>
-<li class="page_item page-item-833"><a href="https://www.adhamdannaway.com/ui-design-book">book</a></li>
-<li class="page_item page-item-7"><a href="https://www.adhamdannaway.com/portfolio">portfolio</a></li>
-<li class="page_item page-item-9 current_page_parent"><a href="https://www.adhamdannaway.com/blog">blog</a></li>
-<li class="page_item page-item-11"><a href="https://www.adhamdannaway.com/contact">contact</a></li>
- 
-
-						<li>
-							<ul class="social">
-								<!-- <li class="email"><span id="email-tooltip" tooltip="Click to copy my email address to your clipboard 😀"><a id="email" data-clipboard-text="email address goes here">email</a></span></li> -->
-								<li class="twitter"><a href="https://www.twitter.com/AdhamDannaway" title="Follow me on Twitter" target="_blank">twitter</a></li>
-								<li class="linkedin"><a href="https://au.linkedin.com/in/adhamdannaway" title="Connect with me on Linkedin" target="_blank">linkedin</a></li>
-								<li class="facebook"><a href="https://www.facebook.com/ilikeadham" title="Like me on Facebook" target="_blank">facebook</a></li>
-								<li class="instagram"><a href="https://www.instagram.com/adham.dannaway" title="Follow me on Instagram" target="_blank">instagram</a></li>
-								<!-- <li class="dribbble"><a href="https://www.dribbble.com/adhamdannaway" title="See my Dribbble shots" target="_blank">dribbble</a></li> -->
-							</ul>
-						</li>
-
-					</ul>
-
-				</nav>
-
-			</div>
-
-		</div>
-
-	</header>  
-  
-	<div class="content portfolio clearfix">
-
-		
-			<section class="main nopad-b">
-<div class="row">
-<div id="text-main" class="col-5 text-main" style="visibility: visible; right: 0%; opacity: 1;">
-<h1>My UI design book</h1>
-<p class="author">Adham Dannaway <span class="date">November 2022</span></p>
-<p>After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my <a href="https://www.practical-ui.com/">UI design book</a>.</p>
-</div>
-<div id="img-main" class="col-7 align-c" style="visibility: visible; left: 0%; opacity: 1;"><img decoding="async" class="major preload" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-practical-ui-main.jpg" alt="Practical UI - UI design book by Adham Dannaway"></div>
-</div>
-</section>
-<div id="content-detail" class="content-detail" style="opacity: 1; top: 0px;">
-<section class="dark">
-<div class="row">
-<div class="col-6">
-		<img decoding="async" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-preview-1.png" alt="UI design book preview 1">
-	</div>
-<div class="col-6">
-		<img decoding="async" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-preview-2.png" alt="UI design book preview 2">
-	</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center nomargin">
-<h2>Why I wrote the book</h2>
-<p>Over the years I’ve realised that most of my UI design decisions are governed by a system of logical rules. Not artistic flair or magical intuition, just simple rules. They’re actually more like helpful guidelines than strict rules.</p>
-<p>The guidelines are mostly based on conventional best practices, which seem to have been forgotten over the years. Many of the guidelines are based on how our bodies work. How our eyes perceive things, how our brains interpret them, and how we interact with a user interface.</p>
-<p class="nomargin">I wish I’d known these guidelines when I first started out in product design, as they would have saved me many years of research and experimentation. My hope is that they’ll help you gain years of visual and interaction design experience in a matter of hours.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="light">
-<div class="row">
-<div class="col-12 align-c"><img decoding="async" class="shadow" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-created-in-figma-large.webp" alt="UI design book created in Figma"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>A book created entirely in Figma</h2>
-<p>You might be surprised to hear that I actually created this book in Figma and exported it as a PDF file. This worked well, as I needed to include a lot of visual design examples in the book.</p>
-<p>I created each visual design example as a component. I built reusable templates for the pages of the book itself, and slotted in the examples on each page. This made it quick and easy to update the examples in the book.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12 align-c"><img decoding="async" class="shadow margin-small" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system-colour-palette.webp" alt="UI design book design system colour palette"></div>
-</div>
-<div class="row">
-<div class="col-6 align-c"><img decoding="async" class="shadow" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system-typography.webp" alt="UI design book design system typography"></div>
-<div class="col-6 align-c"><img decoding="async" class="shadow last" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system.webp" alt="UI design book design system"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>The design system</h2>
-<p>Creating the book in Figma allowed me to put together a simple design system with components, templates, and shared styles to speed up my workflow. I created a colour palette, a type scale, and spacing options to improve consistency and speed up decision making.</p>
-<p>I also created a small library of reusable components to create the visual design examples in the book. I really enjoyed designing the examples and it was a good way to demonstrate the teachings in the book too. Many of the guidelines in the book are about creating a simple yet powerful design system.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-6 align-c"><img decoding="async" class="shadow margin-small" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-logo-sketches.webp" alt="UI design book logo sketches"></div>
-<div class="col-6 align-c"><img decoding="async" class="shadow margin-small" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-brand-symbol.webp" alt="UI design book brand symbol"></div>
-<div class="col-12 align-c"><img decoding="async" class="last shadow" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-logo.webp" alt="UI design book logo"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>The brand</h2>
-<p>I created a simple and neutral brand to ensure that the content was the focus:</p>
-<ul>
-<li><strong>Logo:</strong> I started with the “Catamaran” typeface, outlined the text, and made some small manual adjustments. I wanted to add some character and make sure that each letter flowed to the next.</li>
-<li><strong>Symbol:</strong> I introduced the selection box as a symbol, as it’s an iconic part of most interface design tools.</li>
-<li><strong>Motif:</strong> I used a grid pattern for backgrounds to add texture. The grid is the backbone of all interface designs, so I thought it made sense to pay homage to it.</li>
-<li><strong>Colours:</strong> I went with a single neutral blue brand colour to help ensure universal appeal.</li>
-<li><strong>Typeface:</strong> I chose a neutral sans serif typeface called “Lato”. It’s a quality typeface that’s highly legible at small and large sizes.</li>
-</ul>
-<p>You’ll learn more about applying brand colours and typefaces to interfaces in the book.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12 align-c"><img decoding="async" class="shadow" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-cover.webp" alt="UI design book cover"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>The book cover</h2>
-<p>I wanted the book cover to be simple but memorable. If you look closely, you’ll see that the background texture is actually made up of interface design examples from the book.</p>
-<p>I created this texture by outlining interface components and arranging them in a collage. I also included the grid motif and logo for brand consistency.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-6 align-c"><img decoding="async" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-user-interface-example-before.webp" alt="User interface design example before"></div>
-<div class="col-6 align-c"><img decoding="async" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-user-interface-example-after.webp" alt="User interface design example after"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>A picture is worth a thousand words</h2>
-<p>I tried to keep this book as concise and practical as possible to help you quickly cut through the noise. A picture is worth a thousand words, so I created lots of visual examples to demonstrate concepts faster and make the book a quick and easy read.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12 align-c"><img decoding="async" class="shadow" src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-landing-page.webp" alt="UI design book landing page"></div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="text-center">
-<h2>The landing page</h2>
-<p>I created the landing page using a WordPress website builder called <a href="https://be.elementor.com/visit/?bta=204768&amp;brand=elementor" rel="nofollow noopener" target="_blank">Elementor</a>. It’s relatively quick and easy to use, has lots of templates that you can customise, and has a free version.</p>
-<p>To design the landing page, I used the same design system I created for the book examples. I also used the design guidelines taught in the book.</p>
-<p>I hope this gave you some insights into how I created <a href="https://www.practical-ui.com">Practical UI</a>. I spent thousands of hours crafting each and every word and pixel. I wanted to ensure that the book provided maximum value in minimum time. I’d love to hear your thoughts and feedback.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="dark">
-	
-
-			<div id="next" class="sprite next"><a href="https://www.adhamdannaway.com/portfolio/creating-a-lean-design-system" rel="prev">Creating a lean design system</a></div>			
-								
-		
-			<div class="row">
-				<div class="col-12">
-
-					<div class="header-center"><h3>More from my portfolio</h3></div>
-					<ul id="thumbs" class="thumbs clearfix">
-
-						<li><a href="https://www.adhamdannaway.com/portfolio/creating-a-lean-design-system"><img src="https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system.jpg 628w, https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system-300x176.jpg 300w" sizes="(max-width: 628px) 100vw, 628px"><div class="description"><span class="arrow-r"></span><h4>Creating a lean design system</h4><p>Design system</p></div></a></li><li><a href="https://www.adhamdannaway.com/portfolio/interior-design-news-feed"><img src="https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2.jpg 628w, https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2-300x176.jpg 300w" sizes="(max-width: 628px) 100vw, 628px"><div class="description"><span class="arrow-r"></span><h4>Interior design news feed</h4><p>Side project</p></div></a></li><li><a href="https://www.adhamdannaway.com/portfolio/qantas-map-search"><img src="https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search.jpg 628w, https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search-300x176.jpg 300w" sizes="(max-width: 628px) 100vw, 628px"><div class="description"><span class="arrow-r"></span><h4>Qantas map search</h4><p>Product design</p></div></a></li>					 	
-					 </ul>
-
-				</div>
-			</div>
-
-		</section></div><!-- / section -->
-	</div><!-- / content-detail -->
-
-<!-- / content -->
-
-<footer id="footer" role="contentinfo" style="opacity: 1; top: 0px;">
-
-	<div class="row">
-
-		<div class="col-12">
-
-			<div class="left"><a class="transition" href="https://www.adhamdannaway.com/">© 2023 Adham Dannaway</a></div>
-			
-			<nav id="nav-footer">
-
-				<ul>
-					<li class="page_item page-item-2"><a href="https://www.adhamdannaway.com/about">about</a></li>
-<li class="page_item page-item-833"><a href="https://www.adhamdannaway.com/ui-design-book">book</a></li>
-<li class="page_item page-item-7"><a href="https://www.adhamdannaway.com/portfolio">portfolio</a></li>
-<li class="page_item page-item-9 current_page_parent"><a href="https://www.adhamdannaway.com/blog">blog</a></li>
-<li class="page_item page-item-11"><a href="https://www.adhamdannaway.com/contact">contact</a></li>
-				</ul>
-
-			</nav>
-
-		</div>
-
-	</div>
-
-	<div class="gradient-white">
-		<a class="top" href="#top">Back to top</a>
-	</div>
-
-</footer>
-
-<script type="text/javascript" src="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/swv.min.js?ver=5.8" id="swv-js"></script>
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":"https:\/\/www.adhamdannaway.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/contact-form-7.min.js?ver=5.8" id="contact-form-7-js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> 
-<script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/clipboard.js-master/dist/clipboard.min.js"></script>
-<script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/script.js"></script>
-<script type="text/javascript">
-<!--
-
-//If browser is IE8 or older we show IE specific page
-if(ie < 9){
-	ieMessage();
-}
-
-/*
-* Call functions when dom is ready
-*/
-$(document).ready(function() {
-
-	// Hide browser top bar in mobiles
-	$('body').scrollTop(1);
-
-	// Toggle Navigation for mobile devices
-	$('.icon-nav').on('click', function(){
-		$('header nav').slideToggle();
-		$(this).toggleClass('active');
-	});
-
-	// Function to scroll to top
-	$('a[href=#top]').click(function(){
-
-        $('html, body').animate({scrollTop:0}, 1000, 'easeInOutQuad');
-        return false;
-    });
-
-	// Function to fade in image sprites
-  	$('.sprite').fadeSprite();
-
-    //Function for thumbnail hover effect
-    $('.thumbs li').hoverThumb();
-
-	// Function to animate when leaving page
-	$('.transition, #nav .page_item a, #nav-footer a, #thumbs a, #next a, #prev a, #logo, #face a').leavePage();	
-
-	// Animate the header on first			
-	$('#header').stop().animate({'opacity': '1', 'top':'0'}, 1000);
-
-
-	// Copy email address to clipboard	
-	var clipboard = new ClipboardJS('#email');
-
-	clipboard.on('success', function(e) {
-	    $('#email-tooltip').attr("tooltip", "Yay! My email address has been copied to your clipboard ✅");
-	    $('#email-tooltip').addClass('success');
-
-	    // Reset
-	    $('#email-tooltip').mouseleave(function() {
-
-		    setTimeout( function(){
-				$('#email-tooltip').attr("tooltip", "Click to copy my email address to your clipboard 😀");
-		    	$('#email-tooltip').removeClass('success');
-			}, 300);
-		});
-
-	    e.clearSelection();
-	});
-
-	clipboard.on('error', function(e) {
-	    $('#email-tooltip').attr("tooltip", "Sorry, there was a technical glitch. Please try again.");
-	    $('#email-tooltip').toggleClass('fail');
-	});
-
-
-	// Preload the page with jPreLoader
-	$('body').jpreLoader({
-
-		showSplash: true
-
-	}, function() {	
-
-		//Show the page once images are loaded	
-					animatePage();
-
-			
-	});
-
-});
--->
-</script>
-
-
-<!-- Amazon OneTag -->
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=b678d37e-a438-49a0-8c04-1b28e372c8ec"></script><div id="amzn_assoc_ad_div_adunit_0"></div>
-
-
- </body></html>
+    <meta charset="utf-8" />
+
+    <title>My UI design book - Design case study</title>
+    <link
+      rel="stylesheet"
+      id="siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4"
+      href="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      href="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-780fb670d80d7ec8d73ea12d1ee133b4.css"
+      as="style"
+    />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="twitter:widgets:csp" content="on" />
+    <meta property="fb:app_id" content="381830641890866" />
+
+    <script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/modernizr-2.5.3-min.js"></script>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta http-equiv="cleartype" content="on" />
+
+    <link rel="pingback" href="https://www.adhamdannaway.com/xmlrpc.php" />
+
+    <script type="text/javascript">
+      // Eliminate FOUC
+      document.documentElement.className = "js";
+    </script>
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- This site is optimized with the Yoast SEO plugin v21.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta
+      name="description"
+      content="After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book."
+    />
+    <link
+      rel="canonical"
+      href="https://www.adhamdannaway.com/portfolio/ui-design-book"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="My UI design book - Design case study" />
+    <meta
+      property="og:description"
+      content="After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book."
+    />
+    <meta
+      property="og:url"
+      content="https://www.adhamdannaway.com/portfolio/ui-design-book"
+    />
+    <meta property="og:site_name" content="Adham Dannaway" />
+    <meta
+      property="article:modified_time"
+      content="2023-01-03T11:38:51+00:00"
+    />
+    <meta
+      property="og:image"
+      content="https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg"
+    />
+    <meta property="og:image:width" content="628" />
+    <meta property="og:image:height" content="368" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AdhamDannaway" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="7 minutes" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book",
+            "url": "https://www.adhamdannaway.com/portfolio/ui-design-book",
+            "name": "My UI design book - Design case study",
+            "isPartOf": { "@id": "https://adhamdannaway.com/#website" },
+            "primaryImageOfPage": {
+              "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage"
+            },
+            "image": {
+              "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage"
+            },
+            "thumbnailUrl": "https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg",
+            "datePublished": "2022-12-29T05:44:13+00:00",
+            "dateModified": "2023-01-03T11:38:51+00:00",
+            "description": "After nearly 2 decades working as a product designer, I wrote down my logic-driven approach to UI design. Here’s a quick behind the scenes look at the making of my UI design book.",
+            "breadcrumb": {
+              "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://www.adhamdannaway.com/portfolio/ui-design-book"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book#primaryimage",
+            "url": "https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg",
+            "contentUrl": "https://www.adhamdannaway.com/wp-content/uploads/2022/12/feature-ui-design-book.jpg",
+            "width": 628,
+            "height": 368,
+            "caption": "UI design book"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.adhamdannaway.com/portfolio/ui-design-book#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://adhamdannaway.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "My UI design book"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://adhamdannaway.com/#website",
+            "url": "https://adhamdannaway.com/",
+            "name": "Adham Dannaway",
+            "description": "UI/UX Designer &amp; Front End Developer",
+            "publisher": {
+              "@id": "https://adhamdannaway.com/#/schema/person/f34e0be7bb1daca6c82945f4d3661ca7"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://adhamdannaway.com/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": ["Person", "Organization"],
+            "@id": "https://adhamdannaway.com/#/schema/person/f34e0be7bb1daca6c82945f4d3661ca7",
+            "name": "Adham Dannaway",
+            "image": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://adhamdannaway.com/#/schema/person/image/",
+              "url": "https://www.adhamdannaway.comwp-content/uploads/2020/12/adham-dannaway-profile.jpg",
+              "contentUrl": "https://www.adhamdannaway.comwp-content/uploads/2020/12/adham-dannaway-profile.jpg",
+              "width": 550,
+              "height": 550,
+              "caption": "Adham Dannaway"
+            },
+            "logo": {
+              "@id": "https://adhamdannaway.com/#/schema/person/image/"
+            },
+            "sameAs": [
+              "http://adhamdannaway.com",
+              "https://twitter.com/AdhamDannaway"
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/www.adhamdannaway.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
+                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js?ver=6.3.1"
+      id="jquery-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://www.adhamdannaway.com/wp-json/"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://www.adhamdannaway.com/xmlrpc.php?rsd"
+    />
+
+    <link rel="shortlink" href="https://www.adhamdannaway.com/?p=850" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://www.adhamdannaway.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhamdannaway.com%2Fportfolio%2Fui-design-book"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://www.adhamdannaway.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhamdannaway.com%2Fportfolio%2Fui-design-book&amp;format=xml"
+    />
+
+    <script
+      src="https://www.adhamdannaway.com/wp-includes/js/wp-emoji-release.min.js?ver=6.3.1"
+      defer=""
+    ></script>
+    <style
+      type="text/css"
+      data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe"
+    >
+      .fb_hidden {
+        position: absolute;
+        top: -10000px;
+        z-index: 10001;
+      }
+      .fb_reposition {
+        overflow: hidden;
+        position: relative;
+      }
+      .fb_invisible {
+        display: none;
+      }
+      .fb_reset {
+        background: none;
+        border: 0;
+        border-spacing: 0;
+        color: #000;
+        cursor: auto;
+        direction: ltr;
+        font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 1;
+        margin: 0;
+        overflow: visible;
+        padding: 0;
+        text-align: left;
+        text-decoration: none;
+        text-indent: 0;
+        text-shadow: none;
+        text-transform: none;
+        visibility: visible;
+        white-space: normal;
+        word-spacing: normal;
+      }
+      .fb_reset > div {
+        overflow: hidden;
+      }
+      @keyframes fb_transform {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .fb_animate {
+        animation: fb_transform 0.3s forwards;
+      }
+      .fb_hidden {
+        position: absolute;
+        top: -10000px;
+        z-index: 10001;
+      }
+      .fb_reposition {
+        overflow: hidden;
+        position: relative;
+      }
+      .fb_invisible {
+        display: none;
+      }
+      .fb_reset {
+        background: none;
+        border: 0;
+        border-spacing: 0;
+        color: #000;
+        cursor: auto;
+        direction: ltr;
+        font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 1;
+        margin: 0;
+        overflow: visible;
+        padding: 0;
+        text-align: left;
+        text-decoration: none;
+        text-indent: 0;
+        text-shadow: none;
+        text-transform: none;
+        visibility: visible;
+        white-space: normal;
+        word-spacing: normal;
+      }
+      .fb_reset > div {
+        overflow: hidden;
+      }
+      @keyframes fb_transform {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .fb_animate {
+        animation: fb_transform 0.3s forwards;
+      }
+      .fb_dialog {
+        background: rgba(82, 82, 82, 0.7);
+        position: absolute;
+        top: -10000px;
+        z-index: 10001;
+      }
+      .fb_dialog_advanced {
+        border-radius: 8px;
+        padding: 10px;
+      }
+      .fb_dialog_content {
+        background: #fff;
+        color: #373737;
+      }
+      .fb_dialog_close_icon {
+        background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+          no-repeat scroll 0 0 transparent;
+        cursor: pointer;
+        display: block;
+        height: 15px;
+        position: absolute;
+        right: 18px;
+        top: 17px;
+        width: 15px;
+      }
+      .fb_dialog_mobile .fb_dialog_close_icon {
+        left: 5px;
+        right: auto;
+        top: 5px;
+      }
+      .fb_dialog_padding {
+        background-color: transparent;
+        position: absolute;
+        width: 1px;
+        z-index: -1;
+      }
+      .fb_dialog_close_icon:hover {
+        background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+          no-repeat scroll 0 -15px transparent;
+      }
+      .fb_dialog_close_icon:active {
+        background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+          no-repeat scroll 0 -30px transparent;
+      }
+      .fb_dialog_iframe {
+        line-height: 0;
+      }
+      .fb_dialog_content .dialog_title {
+        background: #6d84b4;
+        border: 1px solid #365899;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .fb_dialog_content .dialog_title > span {
+        background: url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif)
+          no-repeat 5px 50%;
+        float: left;
+        padding: 5px 0 7px 26px;
+      }
+      body.fb_hidden {
+        height: 100%;
+        left: 0;
+        margin: 0;
+        overflow: visible;
+        position: absolute;
+        top: -10000px;
+        transform: none;
+        width: 100%;
+      }
+      .fb_dialog.fb_dialog_mobile.loading {
+        background: url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif)
+          white no-repeat 50% 50%;
+        min-height: 100%;
+        min-width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 10001;
+      }
+      .fb_dialog.fb_dialog_mobile.loading.centered {
+        background: none;
+        height: auto;
+        min-height: initial;
+        min-width: initial;
+        width: auto;
+      }
+      .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+        width: 100%;
+      }
+      .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+        background: none;
+      }
+      .loading.centered #fb_dialog_loader_close {
+        clear: both;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+      #fb-root #fb_dialog_ipad_overlay {
+        background: rgba(0, 0, 0, 0.4);
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+      }
+      #fb-root #fb_dialog_ipad_overlay.hidden {
+        display: none;
+      }
+      .fb_dialog.fb_dialog_mobile.loading iframe {
+        visibility: hidden;
+      }
+      .fb_dialog_mobile .fb_dialog_iframe {
+        position: sticky;
+        top: 0;
+      }
+      .fb_dialog_content .dialog_header {
+        background: linear-gradient(from(#738aba), to(#2c4987));
+        border-bottom: 1px solid;
+        border-color: #043b87;
+        box-shadow: white 0 1px 1px -1px inset;
+        color: #fff;
+        font: bold 14px Helvetica, sans-serif;
+        text-overflow: ellipsis;
+        text-shadow: rgba(0, 30, 84, 0.296875) 0 -1px 0;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      .fb_dialog_content .dialog_header table {
+        height: 43px;
+        width: 100%;
+      }
+      .fb_dialog_content .dialog_header td.header_left {
+        font-size: 12px;
+        padding-left: 5px;
+        vertical-align: middle;
+        width: 60px;
+      }
+      .fb_dialog_content .dialog_header td.header_right {
+        font-size: 12px;
+        padding-right: 5px;
+        vertical-align: middle;
+        width: 60px;
+      }
+      .fb_dialog_content .touchable_button {
+        background: linear-gradient(from(#4267b2), to(#2a4887));
+        background-clip: padding-box;
+        border: 1px solid #29487d;
+        border-radius: 3px;
+        display: inline-block;
+        line-height: 18px;
+        margin-top: 3px;
+        max-width: 85px;
+        padding: 4px 12px;
+        position: relative;
+      }
+      .fb_dialog_content .dialog_header .touchable_button input {
+        background: none;
+        border: none;
+        color: #fff;
+        font: bold 12px Helvetica, sans-serif;
+        margin: 2px -12px;
+        padding: 2px 6px 3px 6px;
+        text-shadow: rgba(0, 30, 84, 0.296875) 0 -1px 0;
+      }
+      .fb_dialog_content .dialog_header .header_center {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 18px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .fb_dialog_content .dialog_content {
+        background: url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif)
+          no-repeat 50% 50%;
+        border: 1px solid #4a4a4a;
+        border-bottom: 0;
+        border-top: 0;
+        height: 150px;
+      }
+      .fb_dialog_content .dialog_footer {
+        background: #f5f6f7;
+        border: 1px solid #4a4a4a;
+        border-top-color: #ccc;
+        height: 40px;
+      }
+      #fb_dialog_loader_close {
+        float: left;
+      }
+      .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+        visibility: hidden;
+      }
+      #fb_dialog_loader_spinner {
+        animation: rotateSpinner 1.2s linear infinite;
+        background-color: transparent;
+        background-image: url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 24px;
+        width: 24px;
+      }
+      @keyframes rotateSpinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .fb_iframe_widget {
+        display: inline-block;
+        position: relative;
+      }
+      .fb_iframe_widget span {
+        display: inline-block;
+        position: relative;
+        text-align: justify;
+      }
+      .fb_iframe_widget iframe {
+        position: absolute;
+      }
+      .fb_iframe_widget_fluid_desktop,
+      .fb_iframe_widget_fluid_desktop span,
+      .fb_iframe_widget_fluid_desktop iframe {
+        max-width: 100%;
+      }
+      .fb_iframe_widget_fluid_desktop iframe {
+        min-width: 220px;
+        position: relative;
+      }
+      .fb_iframe_widget_lift {
+        z-index: 1;
+      }
+      .fb_iframe_widget_fluid {
+        display: inline;
+      }
+      .fb_iframe_widget_fluid span {
+        width: 100%;
+      }
+      .fb_mpn_mobile_landing_page_slide_out {
+        animation-duration: 200ms;
+        animation-name: fb_mpn_landing_page_slide_out;
+        transition-timing-function: ease-in;
+      }
+      .fb_mpn_mobile_landing_page_slide_out_from_left {
+        animation-duration: 200ms;
+        animation-name: fb_mpn_landing_page_slide_out_from_left;
+        transition-timing-function: ease-in;
+      }
+      .fb_mpn_mobile_landing_page_slide_up {
+        animation-duration: 500ms;
+        animation-name: fb_mpn_landing_page_slide_up;
+        transition-timing-function: ease-in;
+      }
+      .fb_mpn_mobile_bounce_in {
+        animation-duration: 300ms;
+        animation-name: fb_mpn_bounce_in;
+        transition-timing-function: ease-in;
+      }
+      .fb_mpn_mobile_bounce_out {
+        animation-duration: 300ms;
+        animation-name: fb_mpn_bounce_out;
+        transition-timing-function: ease-in;
+      }
+      .fb_mpn_mobile_bounce_out_v2 {
+        animation-duration: 300ms;
+        animation-name: fb_mpn_fade_out;
+        transition-timing-function: ease-in;
+      }
+      .fb_customer_chat_bounce_in_v2 {
+        animation-duration: 300ms;
+        animation-name: fb_bounce_in_v2;
+        transition-timing-function: ease-in;
+      }
+      .fb_customer_chat_bounce_in_from_left {
+        animation-duration: 300ms;
+        animation-name: fb_bounce_in_from_left;
+        transition-timing-function: ease-in;
+      }
+      .fb_customer_chat_bounce_out_v2 {
+        animation-duration: 300ms;
+        animation-name: fb_bounce_out_v2;
+        transition-timing-function: ease-in;
+      }
+      .fb_customer_chat_bounce_out_from_left {
+        animation-duration: 300ms;
+        animation-name: fb_bounce_out_from_left;
+        transition-timing-function: ease-in;
+      }
+      .fb_invisible_flow {
+        display: inherit;
+        height: 0;
+        overflow-x: hidden;
+        width: 0;
+      }
+      @keyframes fb_mpn_landing_page_slide_out {
+        0% {
+          margin: 0 12px;
+          width: 100% - 24px;
+        }
+        60% {
+          border-radius: 18px;
+        }
+        100% {
+          border-radius: 50%;
+          margin: 0 24px;
+          width: 60px;
+        }
+      }
+      @keyframes fb_mpn_landing_page_slide_out_from_left {
+        0% {
+          left: 12px;
+          width: 100% - 24px;
+        }
+        60% {
+          border-radius: 18px;
+        }
+        100% {
+          border-radius: 50%;
+          left: 12px;
+          width: 60px;
+        }
+      }
+      @keyframes fb_mpn_landing_page_slide_up {
+        0% {
+          bottom: 0;
+          opacity: 0;
+        }
+        100% {
+          bottom: 24px;
+          opacity: 1;
+        }
+      }
+      @keyframes fb_mpn_bounce_in {
+        0% {
+          opacity: 0.5;
+          top: 100%;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @keyframes fb_mpn_fade_out {
+        0% {
+          bottom: 30px;
+          opacity: 1;
+        }
+        100% {
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+      @keyframes fb_mpn_bounce_out {
+        0% {
+          opacity: 1;
+          top: 0;
+        }
+        100% {
+          opacity: 0.5;
+          top: 100%;
+        }
+      }
+      @keyframes fb_bounce_in_v2 {
+        0% {
+          opacity: 0;
+          transform: scale(0, 0);
+          transform-origin: bottom right;
+        }
+        50% {
+          transform: scale(1.03, 1.03);
+          transform-origin: bottom right;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1, 1);
+          transform-origin: bottom right;
+        }
+      }
+      @keyframes fb_bounce_in_from_left {
+        0% {
+          opacity: 0;
+          transform: scale(0, 0);
+          transform-origin: bottom left;
+        }
+        50% {
+          transform: scale(1.03, 1.03);
+          transform-origin: bottom left;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1, 1);
+          transform-origin: bottom left;
+        }
+      }
+      @keyframes fb_bounce_out_v2 {
+        0% {
+          opacity: 1;
+          transform: scale(1, 1);
+          transform-origin: bottom right;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0, 0);
+          transform-origin: bottom right;
+        }
+      }
+      @keyframes fb_bounce_out_from_left {
+        0% {
+          opacity: 1;
+          transform: scale(1, 1);
+          transform-origin: bottom left;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0, 0);
+          transform-origin: bottom left;
+        }
+      }
+      @keyframes slideInFromBottom {
+        0% {
+          opacity: 0.1;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInFromBottomDelay {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        97% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="clearfix">
+    <!-- Include Facebook like button -->
+    <div id="fb-root" class="fb_reset">
+      <div style="position: absolute; top: -10000px; width: 0px; height: 0px">
+        <div></div>
+      </div>
+    </div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=227683463924663";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <header id="header" style="opacity: 1; top: 0px">
+      <div class="row">
+        <div class="col-12">
+          <a id="logo" class="logo" href="https://www.adhamdannaway.com/"
+            >Adham Dannaway</a
+          >
+          <div class="icon-nav">navigation</div>
+
+          <nav>
+            <ul id="nav" class="portfolio">
+              <li class="page_item page-item-2">
+                <a href="https://www.adhamdannaway.com/about">about</a>
+              </li>
+              <li class="page_item page-item-833">
+                <a href="https://www.adhamdannaway.com/ui-design-book">book</a>
+              </li>
+              <li class="page_item page-item-7">
+                <a href="https://www.adhamdannaway.com/portfolio">portfolio</a>
+              </li>
+              <li class="page_item page-item-9 current_page_parent">
+                <a href="https://www.adhamdannaway.com/blog">blog</a>
+              </li>
+              <li class="page_item page-item-11">
+                <a href="https://www.adhamdannaway.com/contact">contact</a>
+              </li>
+
+              <li>
+                <ul class="social">
+                  <!-- <li class="email"><span id="email-tooltip" tooltip="Click to copy my email address to your clipboard 😀"><a id="email" data-clipboard-text="email address goes here">email</a></span></li> -->
+                  <li class="twitter">
+                    <a
+                      href="https://www.twitter.com/AdhamDannaway"
+                      title="Follow me on Twitter"
+                      target="_blank"
+                      >twitter</a
+                    >
+                  </li>
+                  <li class="linkedin">
+                    <a
+                      href="https://au.linkedin.com/in/adhamdannaway"
+                      title="Connect with me on Linkedin"
+                      target="_blank"
+                      >linkedin</a
+                    >
+                  </li>
+                  <li class="facebook">
+                    <a
+                      href="https://www.facebook.com/ilikeadham"
+                      title="Like me on Facebook"
+                      target="_blank"
+                      >facebook</a
+                    >
+                  </li>
+                  <li class="instagram">
+                    <a
+                      href="https://www.instagram.com/adham.dannaway"
+                      title="Follow me on Instagram"
+                      target="_blank"
+                      >instagram</a
+                    >
+                  </li>
+                  <!-- <li class="dribbble"><a href="https://www.dribbble.com/adhamdannaway" title="See my Dribbble shots" target="_blank">dribbble</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content portfolio clearfix">
+      <section class="main nopad-b">
+        <div class="row">
+          <div
+            id="text-main"
+            class="col-5 text-main"
+            style="visibility: visible; right: 0%; opacity: 1"
+          >
+            <h1>My UI design book</h1>
+            <p class="author">
+              Adham Dannaway <span class="date">November 2022</span>
+            </p>
+            <p>
+              After nearly 2 decades working as a product designer, I wrote down
+              my logic-driven approach to UI design. Here’s a quick behind the
+              scenes look at the making of my
+              <a href="https://www.practical-ui.com/">UI design book</a>.
+            </p>
+          </div>
+          <div
+            id="img-main"
+            class="col-7 align-c"
+            style="visibility: visible; left: 0%; opacity: 1"
+          >
+            <img
+              decoding="async"
+              class="major preload"
+              src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-practical-ui-main.jpg"
+              alt="Practical UI - UI design book by Adham Dannaway"
+            />
+          </div>
+        </div>
+      </section>
+      <div
+        id="content-detail"
+        class="content-detail"
+        style="opacity: 1; top: 0px"
+      >
+        <section class="dark">
+          <div class="row">
+            <div class="col-6">
+              <img
+                decoding="async"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-preview-1.png"
+                alt="UI design book preview 1"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                decoding="async"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-preview-2.png"
+                alt="UI design book preview 2"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center nomargin">
+                <h2>Why I wrote the book</h2>
+                <p>
+                  Over the years I’ve realised that most of my UI design
+                  decisions are governed by a system of logical rules. Not
+                  artistic flair or magical intuition, just simple rules.
+                  They’re actually more like helpful guidelines than strict
+                  rules.
+                </p>
+                <p>
+                  The guidelines are mostly based on conventional best
+                  practices, which seem to have been forgotten over the years.
+                  Many of the guidelines are based on how our bodies work. How
+                  our eyes perceive things, how our brains interpret them, and
+                  how we interact with a user interface.
+                </p>
+                <p class="nomargin">
+                  I wish I’d known these guidelines when I first started out in
+                  product design, as they would have saved me many years of
+                  research and experimentation. My hope is that they’ll help you
+                  gain years of visual and interaction design experience in a
+                  matter of hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="light">
+          <div class="row">
+            <div class="col-12 align-c">
+              <img
+                decoding="async"
+                class="shadow"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-created-in-figma-large.webp"
+                alt="UI design book created in Figma"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>A book created entirely in Figma</h2>
+                <p>
+                  You might be surprised to hear that I actually created this
+                  book in Figma and exported it as a PDF file. This worked well,
+                  as I needed to include a lot of visual design examples in the
+                  book.
+                </p>
+                <p>
+                  I created each visual design example as a component. I built
+                  reusable templates for the pages of the book itself, and
+                  slotted in the examples on each page. This made it quick and
+                  easy to update the examples in the book.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 align-c">
+              <img
+                decoding="async"
+                class="shadow margin-small"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system-colour-palette.webp"
+                alt="UI design book design system colour palette"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                class="shadow"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system-typography.webp"
+                alt="UI design book design system typography"
+              />
+            </div>
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                class="shadow last"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-design-system.webp"
+                alt="UI design book design system"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>The design system</h2>
+                <p>
+                  Creating the book in Figma allowed me to put together a simple
+                  design system with components, templates, and shared styles to
+                  speed up my workflow. I created a colour palette, a type
+                  scale, and spacing options to improve consistency and speed up
+                  decision making.
+                </p>
+                <p>
+                  I also created a small library of reusable components to
+                  create the visual design examples in the book. I really
+                  enjoyed designing the examples and it was a good way to
+                  demonstrate the teachings in the book too. Many of the
+                  guidelines in the book are about creating a simple yet
+                  powerful design system.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                class="shadow margin-small"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-logo-sketches.webp"
+                alt="UI design book logo sketches"
+              />
+            </div>
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                class="shadow margin-small"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-brand-symbol.webp"
+                alt="UI design book brand symbol"
+              />
+            </div>
+            <div class="col-12 align-c">
+              <img
+                decoding="async"
+                class="last shadow"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-logo.webp"
+                alt="UI design book logo"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>The brand</h2>
+                <p>
+                  I created a simple and neutral brand to ensure that the
+                  content was the focus:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Logo:</strong> I started with the “Catamaran”
+                    typeface, outlined the text, and made some small manual
+                    adjustments. I wanted to add some character and make sure
+                    that each letter flowed to the next.
+                  </li>
+                  <li>
+                    <strong>Symbol:</strong> I introduced the selection box as a
+                    symbol, as it’s an iconic part of most interface design
+                    tools.
+                  </li>
+                  <li>
+                    <strong>Motif:</strong> I used a grid pattern for
+                    backgrounds to add texture. The grid is the backbone of all
+                    interface designs, so I thought it made sense to pay homage
+                    to it.
+                  </li>
+                  <li>
+                    <strong>Colours:</strong> I went with a single neutral blue
+                    brand colour to help ensure universal appeal.
+                  </li>
+                  <li>
+                    <strong>Typeface:</strong> I chose a neutral sans serif
+                    typeface called “Lato”. It’s a quality typeface that’s
+                    highly legible at small and large sizes.
+                  </li>
+                </ul>
+                <p>
+                  You’ll learn more about applying brand colours and typefaces
+                  to interfaces in the book.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 align-c">
+              <img
+                decoding="async"
+                class="shadow"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-cover.webp"
+                alt="UI design book cover"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>The book cover</h2>
+                <p>
+                  I wanted the book cover to be simple but memorable. If you
+                  look closely, you’ll see that the background texture is
+                  actually made up of interface design examples from the book.
+                </p>
+                <p>
+                  I created this texture by outlining interface components and
+                  arranging them in a collage. I also included the grid motif
+                  and logo for brand consistency.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-user-interface-example-before.webp"
+                alt="User interface design example before"
+              />
+            </div>
+            <div class="col-6 align-c">
+              <img
+                decoding="async"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-user-interface-example-after.webp"
+                alt="User interface design example after"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>A picture is worth a thousand words</h2>
+                <p>
+                  I tried to keep this book as concise and practical as possible
+                  to help you quickly cut through the noise. A picture is worth
+                  a thousand words, so I created lots of visual examples to
+                  demonstrate concepts faster and make the book a quick and easy
+                  read.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 align-c">
+              <img
+                decoding="async"
+                class="shadow"
+                src="/wp-content/themes/dannaway/images/portfolio/ui-design-book/ui-design-book-landing-page.webp"
+                alt="UI design book landing page"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h2>The landing page</h2>
+                <p>
+                  I created the landing page using a WordPress website builder
+                  called
+                  <a
+                    href="https://be.elementor.com/visit/?bta=204768&amp;brand=elementor"
+                    rel="nofollow noopener"
+                    target="_blank"
+                    >Elementor</a
+                  >. It’s relatively quick and easy to use, has lots of
+                  templates that you can customise, and has a free version.
+                </p>
+                <p>
+                  To design the landing page, I used the same design system I
+                  created for the book examples. I also used the design
+                  guidelines taught in the book.
+                </p>
+                <p>
+                  I hope this gave you some insights into how I created
+                  <a href="https://www.practical-ui.com">Practical UI</a>. I
+                  spent thousands of hours crafting each and every word and
+                  pixel. I wanted to ensure that the book provided maximum value
+                  in minimum time. I’d love to hear your thoughts and feedback.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="dark">
+          <div id="next" class="sprite next">
+            <a
+              href="https://www.adhamdannaway.com/portfolio/creating-a-lean-design-system"
+              rel="prev"
+              >Creating a lean design system</a
+            >
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="header-center"><h3>More from my portfolio</h3></div>
+              <ul id="thumbs" class="thumbs clearfix">
+                <li>
+                  <a
+                    href="https://www.adhamdannaway.com/portfolio/creating-a-lean-design-system"
+                    ><img
+                      src="https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      srcset="
+                        https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system.jpg         628w,
+                        https://www.adhamdannaway.com/wp-content/uploads/2020/08/feature-william-hill-design-system-300x176.jpg 300w
+                      "
+                      sizes="(max-width: 628px) 100vw, 628px"
+                    />
+                    <div class="description">
+                      <span class="arrow-r"></span>
+                      <h4>Creating a lean design system</h4>
+                      <p>Design system</p>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.adhamdannaway.com/portfolio/interior-design-news-feed"
+                    ><img
+                      src="https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      srcset="
+                        https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2.jpg         628w,
+                        https://www.adhamdannaway.com/wp-content/uploads/2019/04/feature-interior-design-news-feed-2-300x176.jpg 300w
+                      "
+                      sizes="(max-width: 628px) 100vw, 628px"
+                    />
+                    <div class="description">
+                      <span class="arrow-r"></span>
+                      <h4>Interior design news feed</h4>
+                      <p>Side project</p>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.adhamdannaway.com/portfolio/qantas-map-search"
+                    ><img
+                      src="https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      srcset="
+                        https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search.jpg         628w,
+                        https://www.adhamdannaway.com/wp-content/uploads/2018/07/feature-qantas-map-search-300x176.jpg 300w
+                      "
+                      sizes="(max-width: 628px) 100vw, 628px"
+                    />
+                    <div class="description">
+                      <span class="arrow-r"></span>
+                      <h4>Qantas map search</h4>
+                      <p>Product design</p>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- / section -->
+    </div>
+    <!-- / content-detail -->
+
+    <!-- / content -->
+
+    <footer id="footer" role="contentinfo" style="opacity: 1; top: 0px">
+      <div class="row">
+        <div class="col-12">
+          <div class="left">
+            <a class="transition" href="https://www.adhamdannaway.com/"
+              >© 2023 Adham Dannaway</a
+            >
+          </div>
+
+          <nav id="nav-footer">
+            <ul>
+              <li class="page_item page-item-2">
+                <a href="https://www.adhamdannaway.com/about">about</a>
+              </li>
+              <li class="page_item page-item-833">
+                <a href="https://www.adhamdannaway.com/ui-design-book">book</a>
+              </li>
+              <li class="page_item page-item-7">
+                <a href="https://www.adhamdannaway.com/portfolio">portfolio</a>
+              </li>
+              <li class="page_item page-item-9 current_page_parent">
+                <a href="https://www.adhamdannaway.com/blog">blog</a>
+              </li>
+              <li class="page_item page-item-11">
+                <a href="https://www.adhamdannaway.com/contact">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="gradient-white">
+        <a class="top" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/swv.min.js?ver=5.8"
+      id="swv-js"
+    ></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+      /* <![CDATA[ */
+      var wpcf7 = {
+        api: {
+          root: "https:\/\/www.adhamdannaway.com\/wp-json\/",
+          namespace: "contact-form-7\/v1",
+        },
+        cached: "1",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.adhamdannaway.com/wp-content/uploads/siteground-optimizer-assets/contact-form-7.min.js?ver=5.8"
+      id="contact-form-7-js"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-1.7.2.min.js"><\/script>');
+    </script>
+    <script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/clipboard.js-master/dist/clipboard.min.js"></script>
+    <script src="https://www.adhamdannaway.com/wp-content/themes/dannaway/js/script.js"></script>
+    <script type="text/javascript">
+      <!--
+
+      //If browser is IE8 or older we show IE specific page
+      if (ie < 9) {
+        ieMessage();
+      }
+
+      /*
+       * Call functions when dom is ready
+       */
+      $(document).ready(function () {
+        // Hide browser top bar in mobiles
+        $("body").scrollTop(1);
+
+        // Toggle Navigation for mobile devices
+        $(".icon-nav").on("click", function () {
+          $("header nav").slideToggle();
+          $(this).toggleClass("active");
+        });
+
+        // Function to scroll to top
+        $("a[href=#top]").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 1000, "easeInOutQuad");
+          return false;
+        });
+
+        // Function to fade in image sprites
+        $(".sprite").fadeSprite();
+
+        //Function for thumbnail hover effect
+        $(".thumbs li").hoverThumb();
+
+        // Function to animate when leaving page
+        $(
+          ".transition, #nav .page_item a, #nav-footer a, #thumbs a, #next a, #prev a, #logo, #face a"
+        ).leavePage();
+
+        // Animate the header on first
+        $("#header").stop().animate({ opacity: "1", top: "0" }, 1000);
+
+        // Copy email address to clipboard
+        var clipboard = new ClipboardJS("#email");
+
+        clipboard.on("success", function (e) {
+          $("#email-tooltip").attr(
+            "tooltip",
+            "Yay! My email address has been copied to your clipboard ✅"
+          );
+          $("#email-tooltip").addClass("success");
+
+          // Reset
+          $("#email-tooltip").mouseleave(function () {
+            setTimeout(function () {
+              $("#email-tooltip").attr(
+                "tooltip",
+                "Click to copy my email address to your clipboard 😀"
+              );
+              $("#email-tooltip").removeClass("success");
+            }, 300);
+          });
+
+          e.clearSelection();
+        });
+
+        clipboard.on("error", function (e) {
+          $("#email-tooltip").attr(
+            "tooltip",
+            "Sorry, there was a technical glitch. Please try again."
+          );
+          $("#email-tooltip").toggleClass("fail");
+        });
+
+        // Preload the page with jPreLoader
+        $("body").jpreLoader(
+          {
+            showSplash: true,
+          },
+          function () {
+            //Show the page once images are loaded
+            animatePage();
+          }
+        );
+      });
+      -->
+    </script>
+
+    <!-- Amazon OneTag -->
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=b678d37e-a438-49a0-8c04-1b28e372c8ec"></script>
+    <div id="amzn_assoc_ad_div_adunit_0"></div>
+  </body>
+</html>
