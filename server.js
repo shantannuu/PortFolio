@@ -1,11 +1,18 @@
 const express = require('express');
 const app = express();
-app.use(express.json())
+app.use(express.json());
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
 
 
 const port = process.env.PORT || 5000;
+
+const userRoute = require("./Routes/aboutRoutes")
+const contactRoute =require("./Routes/contactRoutes")
+
+app.use("/api/users", userRoute);
+app.use("/api/contact",contactRoute);
+
 
 const path = require("path");
 __dirname = path.resolve();
