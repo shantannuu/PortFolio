@@ -1,0 +1,58 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0; /* Remove default margin */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* About Me section styles */
+.about-me {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Enable container to wrap around floated image */
+}
+
+.about-me img {
+    float: left; /* Float the image to the left */
+    width: 200px; /* Make the image larger */
+    height: auto;
+    margin-right: 20px; /* Add spacing between image and text */
+}
+
+/* Clear float to ensure proper alignment of text */
+.about-me::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Contact info styles */
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
