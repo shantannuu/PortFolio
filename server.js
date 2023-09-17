@@ -9,9 +9,11 @@ const port = process.env.PORT || 5000;
 
 const userRoute = require("./Routes/aboutRoutes")
 const contactRoute =require("./Routes/contactRoutes")
+const contactgetRoute=require("./Routes/adminRoute")
 
 app.use("/api/users", userRoute);
 app.use("/api/contact",contactRoute);
+app.use("/api/admin",contactgetRoute);
 
 
 const path = require("path");
