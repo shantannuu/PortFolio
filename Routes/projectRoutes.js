@@ -36,4 +36,53 @@ router.get("/getProjectDetails",  async (req, res) => {
     }
 })
 
+router.get("/get-project-by-id/:id", async (req, res) => {
+    try {
+
+        const project = await Project.findById(req.params.id);
+        return res.send({
+            success: true,
+            data: project
+        })
+    } catch (error) {
+        return res.send({
+            success: false,
+            message: error.message,
+        })
+    }
+})
+
+router.post("/addDescription", async (req, res) => {
+    try {
+        
+        const project = await Project.findById(req.body._id).then(
+            (project) => {
+                if (!project) {
+                  console.log('Project not found');
+                  return;
+                }
+
+                project.description.push({
+                    title: req.body.title,
+                    content: req.body.content,
+                })
+
+                project.save();
+
+
+            }
+        );
+
+        return res.send({
+            success: true,
+            data: project
+        })
+    } catch (error) {
+        return res.send({
+            success: false,
+            message: error.message,
+        })
+    }
+})
+
 module.exports = router;
