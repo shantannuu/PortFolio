@@ -85,4 +85,20 @@ router.post("/addDescription", async (req, res) => {
     }
 })
 
+router.put("/update-Project-Details/:id", async (req, res) => {
+    try {
+        
+        await Project.findByIdAndUpdate(req.params.id, req.body);
+        return res.send({
+            success: true,
+            message: "Project Updated Successfully !"
+        })
+    } catch (error) {
+        return res.send({
+            success: false,
+            message: error.message,
+        })
+    }
+})
+
 module.exports = router;
