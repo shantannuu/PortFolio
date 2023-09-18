@@ -33,6 +33,40 @@ router.post("/Admin-register", async (req, res) => {
     }
 })
 
+router.post("/Admin-login", async (req, res) => {
+    try {
+        const user = await Admin.findOne({ email: req.body.email });
+        if (!user) {
+            return res.send({
+                success: false,
+                message: "User not exists !",
+            })
+        }
+
+        const validPassword = await bcrypt.compare(req.body.password, user.password)
+
+        if (!validPassword) {
+            return res.send({
+                success: false,
+                message: "Invalid Password",
+            })
+        }
+
+        const token = jwt.sign({ userId: user._id }, process.env.jwt_token, { expiresIn: "1d" })
+
+        return res.send({
+            success: true,
+            message: "Login Successfully !",
+            data: token,
+        })
+    } catch (error) {
+        return res.send({
+            success: false,
+            message: error.message,
+        })
+    }
+})
+
 router.get("/getContact",  async (req, res) => {
     try {
 
