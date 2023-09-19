@@ -53,7 +53,7 @@ router.get("/get-project-by-id/:id", async (req, res) => {
     }
 })
 
-router.post("/addDescription", async (req, res) => {
+router.post("/addDescription", authMiddleware ,async (req, res) => {
     try {
         
         const project = await Project.findById(req.body._id).then(
@@ -86,7 +86,7 @@ router.post("/addDescription", async (req, res) => {
     }
 })
 
-router.put("/update-Project-Details/:id", async (req, res) => {
+router.put("/update-Project-Details/:id", authMiddleware ,async (req, res) => {
     try {
         
         await Project.findByIdAndUpdate(req.params.id, req.body);
@@ -102,7 +102,7 @@ router.put("/update-Project-Details/:id", async (req, res) => {
     }
 })
 
-router.put("/update-Project-Description/:id", async (req, res) => {
+router.put("/update-Project-Description/:id", authMiddleware ,async (req, res) => {
     try {
         
         await Project.findByIdAndUpdate(req.params.id, req.body);

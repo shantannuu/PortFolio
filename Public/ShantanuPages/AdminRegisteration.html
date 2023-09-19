@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for background image */
+        body {
+            background-image: url('./1.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 font-sans">
+
+    <!-- Registration Form Container -->
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
+            <!-- Header -->
+            <h1 class="text-3xl font-semibold text-center mb-6">Registration</h1>
+            
+            <!-- Registration Form -->
+            <form class="space-y-4">
+                <!-- Name Input -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-lg">
+                </div>
+
+                <!-- Profile Input -->
+                <div>
+                    <label for="profile" class="block text-sm font-medium text-gray-700">Profile</label>
+                    <input type="text" id="profile" name="profile" class="mt-1 p-2 w-full border rounded-lg">
+                </div>
+
+                <!-- Phone Input -->
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-lg">
+                </div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-lg">
+                </div>
+
+                <!-- Password Input -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-lg">
+                </div>
+
+                <!-- Role Input -->
+                <div>
+                    <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
+                    <select id="role" name="role" class="mt-1 p-2 w-full border rounded-lg">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+
+                <!-- Animated Button -->
+                <div>
+                    <button type="submit" class="animate-pulse bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg w-full">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

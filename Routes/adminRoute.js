@@ -4,6 +4,8 @@ const Contact = require('../models/Contact')
 const Admin = require('../models/Admin')
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const authMiddleware = require('../controllers/authMiddleware');
+
 
 router.post("/Admin-register", async (req, res) => {
     try {
@@ -67,7 +69,7 @@ router.post("/Admin-login", async (req, res) => {
     }
 })
 
-router.get("/getContact",  async (req, res) => {
+router.get("/getContact", authMiddleware,  async (req, res) => {
     try {
 
         const contact = await Contact.find();
