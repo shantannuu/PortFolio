@@ -1,0 +1,36 @@
+/* Apply styles to the header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Apply styles to the individual about-me sections */
+.about-me {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style the images */
+.about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Style the contact info section */
+.contact-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style links */
+.contact-info a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
